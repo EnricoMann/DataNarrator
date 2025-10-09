@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+  # =======================
+  # 🧠 Ollama (IA local)
+  # =======================
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    entrypoint: /bin/sh -c "
+      ollama serve & \
+      sleep 10 && \
+      ollama list | grep -q 'llama3.1:8b' || ollama pull llama3.1:8b && \
+      wait"
+    restart: unless-stopped
+
+  # =======================
+  # ⚙️ Backend (FastAPI)
+  # =======================
+  backend:
+    build: ./backend
+    container_name: datanarrator_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - OLLAMA_MODEL=llama3.1:8b
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+  # =======================
+  # 💻 Frontend (Next.js)
+  # =======================
+  frontend:
+    build: ./frontend
+    container_name: datanarrator_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/usr/src/app
+    command: bash -c "npm install && npm run dev"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+# =======================
+# 📦 Volumes
+# =======================
+volumes:
+  ollama_data:

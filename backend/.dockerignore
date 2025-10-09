@@ -1,0 +1,20 @@
+# Exclude local envs and caches
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+Lib/
+Include/
+Scripts/
+share/
+tcl/
+*.log
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Not needed inside the container
+tests/
+data/
