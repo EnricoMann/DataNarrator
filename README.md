@@ -95,7 +95,7 @@ The exported PDF includes:
 
 **Enrico Maragno**  
 Barcelona, Spain 🇪🇸  
-Full Stack & Data Engineer – passionate about building AI-powered analytical products.
+Full Stack & Software Engineer
 
 ---
 
