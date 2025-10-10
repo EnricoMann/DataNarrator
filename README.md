@@ -101,4 +101,4 @@ Full Stack & Software Engineer
 
 ## 🧱 License
 
-MIT License © 2025 Enrico Maragno
+MIT License © 2025 Enrico Mann
