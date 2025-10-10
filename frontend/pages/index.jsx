@@ -234,12 +234,12 @@ Numeric Columns: ${
       <footer className="mt-10 text-sm text-gray-500">
         Developed by{" "}
         <a
-          href="https://github.com/EnricoMaragno"
+          href="https://github.com/EnricoMann"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
         >
-          Enrico Maragno
+          Enrico Mann
         </a>
       </footer>
     </div>
