@@ -93,7 +93,7 @@ The exported PDF includes:
 
 ## 👤 Author
 
-**Enrico Maragno**  
+**Enrico Mann**  
 Barcelona, Spain 🇪🇸  
 Full Stack & Software Engineer
 
