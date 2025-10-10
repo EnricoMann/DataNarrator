@@ -52,7 +52,7 @@ data-narrator/
 
 ### Option 1 — Using Docker (recommended)
 ```bash
-git clone https://github.com/EnricoMaragno/data-narrator.git
+git clone https://github.com/EnricoMann/data-narrator.git
 cd data-narrator
 docker compose up --build
 ```
