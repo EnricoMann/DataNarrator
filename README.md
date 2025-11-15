@@ -5,7 +5,7 @@ It combines **FastAPI (Python)** for statistical intelligence with **Next.js (Re
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 - Upload CSV datasets directly in the browser.  
 - The backend performs numerical and statistical analysis (trends, regressions, correlations).  
@@ -15,7 +15,7 @@ It combines **FastAPI (Python)** for statistical intelligence with **Next.js (Re
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology | Description |
 |-------|-------------|-------------|
@@ -28,7 +28,7 @@ It combines **FastAPI (Python)** for statistical intelligence with **Next.js (Re
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 data-narrator/
@@ -48,7 +48,7 @@ data-narrator/
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option 1 — Using Docker (recommended)
 ```bash
